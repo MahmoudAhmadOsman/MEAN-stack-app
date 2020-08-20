@@ -1,0 +1,25 @@
+<form (submit)="onAddTask()" class="form-horizontal" >
+
+  <h2>Add New Task</h2>
+
+
+  <div class="form-group">
+    <label class="col-lg-2 control-label">Name</label>
+    <div class="col-lg-10">
+      <input type="text" class="form-control" [(ngModel)]="name" name="name" >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-lg-2 control-label">Completed</label>
+    <div class="col-lg-10">
+      <input type="checkbox" [(ngModel)]="done" name="done" >
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="pull-right">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+</form>
